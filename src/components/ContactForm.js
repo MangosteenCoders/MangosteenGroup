@@ -84,13 +84,13 @@ export default function ContactForm() {
             <form onSubmit={sendForm} data-aos="zoom-out-up" data-aos-duration="2000" className='contactFormContent'>
               <label>Ваше Ф.И.О</label>
               <input style={styled} onChange={changeNameHandler}  className='col-12' type="text" placeholder={getText('contactInputHolder')} />
-              <p style={{color: 'red'}}>{error}</p>
+              <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <label>Телефон</label>
               <input style={styled} onChange={changeNameHandler}  className='col-12' type="text" placeholder={getText('contatInputHolderPhone')} />
-              <p style={{color: 'red'}}>{error}</p>
+              <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <label>Xabaringiz</label>
               <textarea style={styled} onChange={changeNameHandler}  className='col-12' placeholder={getText('contactInputHolderText')}></textarea>
-              <p style={{color: 'red'}}>{error}</p>
+              <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <div className='contactSocialContent'>
                 <button className='consultationBtn contactConsultationBtn'>Submit</button>
                 <div className='contactSocialLink'>

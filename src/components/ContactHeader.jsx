@@ -9,7 +9,7 @@ export default function ContactHeader() {
         <div className='blur'></div> 
         <div className="container">
             <div className='contactHeader'>
-                <div>
+                <div data-aos="fade-right" data-aos-duration="2000">
                   <h2 data-aos="fade-right" data-aos-duration="2000">{getText('Contacts')}</h2>
                   <div data-aos="fade-up" data-aos-duration="2000" className='d-flex'>
                       <div>

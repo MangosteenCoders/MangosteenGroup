@@ -2,7 +2,6 @@ import axios from 'axios'
 import { useState } from 'react'
 import { getLanguage, getText } from '../locale'
 
-
 export default function ContactForm() {
   const BOT_TOKEN = "6144923882:AAHwtPSAS0AAmfhkG56VObE9uwYKtazcglw";
   const CHAT_ID = "-1001832600674"
@@ -30,27 +29,24 @@ export default function ContactForm() {
       .catch((err) => {
         console.log(err);
       })
+
+      let style = {}
+      if(inputValue === '') {
+        style = {
+          border: '2px solid red'
+        }
+      }
+       else {
+        style = {
+          border: '2px solid green'
+        }
+      }
+      setStyled(style)
   }
 
   const [styled, setStyled] = useState({})
   const [inputValue, setValue] = useState('')
-  const [err, setError] = useState('')
-
-  const formChangedHandler = (e) => {
-    e.preventDefault()
-    let style = {}
-    if(inputValue === '') {
-      style = {
-        border: '2px solid red'
-      }
-    }
-     else {
-      style = {
-        border: '2px solid green'
-      }
-    }
-    setStyled(style)
-  }
+  const [error, setError] = useState('')
 
   const changeNameHandler = (e) => {
     let error = ''
@@ -62,9 +58,10 @@ export default function ContactForm() {
     if(a[elInputName] === '') {
       style = {
         border: '2px solid red'
-      },
+      };
       setError('To’ldirish majburiy!')
     }
+
      else {
       style = {
         border: '2px solid green'
@@ -87,10 +84,13 @@ export default function ContactForm() {
             <form onSubmit={sendForm} data-aos="zoom-out-up" data-aos-duration="2000" className='contactFormContent'>
               <label>Ваше Ф.И.О</label>
               <input style={styled} onChange={changeNameHandler}  className='col-12' type="text" placeholder={getText('contactInputHolder')} />
+              <p style={{color: 'red'}}>{error}</p>
               <label>Телефон</label>
               <input style={styled} onChange={changeNameHandler}  className='col-12' type="text" placeholder={getText('contatInputHolderPhone')} />
+              <p style={{color: 'red'}}>{error}</p>
               <label>Xabaringiz</label>
               <textarea style={styled} onChange={changeNameHandler}  className='col-12' placeholder={getText('contactInputHolderText')}></textarea>
+              <p style={{color: 'red'}}>{error}</p>
               <div className='contactSocialContent'>
                 <button className='consultationBtn contactConsultationBtn'>Submit</button>
                 <div className='contactSocialLink'>

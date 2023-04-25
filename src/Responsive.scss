@@ -1,0 +1,473 @@
+// Mobile 
+
+@media (max-width : 576px) {
+  
+  .Home{
+    .HomeHeader{
+      .header-info{
+        h1{
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 120%;
+          margin-bottom: 30px;
+          span{
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 120%;
+          }
+        }
+
+        h2{
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 120%;
+        }
+      }
+    }
+
+    .OurServices{
+      padding: 50px 0;
+      h2{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+      }
+  
+      .service-info{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+      }
+
+      .card{
+        padding: 10px;
+
+        .card-icon{
+          margin-bottom: 10px;
+        }
+
+        .card-title{
+          font-weight: 600;
+          font-size: 16.8746px;
+          line-height: 120%;
+          margin-bottom: 10px;
+        }
+
+        p{
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 120%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .Questions{
+      padding: 50px 0;
+      .section-tittle{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+      }
+
+      .section-info{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+
+      .accordion-tittle{
+        font-weight: 500;
+        font-size: 16.8746px;
+        line-height: 120%;
+  
+      }
+
+      .text-color{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 120%;
+      }
+    }
+
+    .ServicesInfo{
+      padding: 50px 0;
+      h2{
+        text-align: center;
+        margin-bottom: 50px;
+  
+      }
+  
+      .service-card {
+        padding: 30px 10px;
+  
+      
+  
+        h4{
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 120%;
+          margin-bottom: 15px;
+        }
+  
+        h3{
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 120%;
+          margin-bottom: 15px;
+  
+        }
+  
+        .service-card-info{
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 30px;
+  
+          p{
+            font-weight: 600;
+            font-size: 12.8746px;
+            line-height: 120%;
+          }
+  
+          a{
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 120%;
+            
+          }
+        }
+      }
+    }
+  }
+
+  // Services
+
+  .Services{
+    .HeaderWeb{
+      h1{
+        font-weight: 400 !important;
+        font-size: 35px !important;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+    }
+    .WebPrice{
+      .price-tittle{
+        
+      }
+    }
+
+    .card{
+
+      .card-tittle{
+        font-weight: 600 !important;
+        font-size: 18.8746px !important;
+        line-height: 120% !important;
+      }
+      h4{
+      }
+
+      .time{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 0 0 30px 30px;
+
+        h4{
+          font-size: 18px;
+          margin: 0;
+        }
+        
+        p{
+          font-size: 10px;
+          padding: 10px;
+          border-radius: 10px;
+          color: #fff;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+
+@media (max-width : 768px) {
+
+  .consultationBtn{
+    font-weight: 700;
+    font-size: 14.2657px;
+    line-height: 120%;
+    height: 40px;
+    padding: 10px 45px;
+  }
+  .Navbar{
+    .nav-body{
+
+      .nav-logo{
+        img{
+          height: 50px;
+        }
+      }
+      .nav__toggler{
+        display: block;
+        z-index: 9;
+      }
+
+      .toggle{
+        .line1{
+          transform: rotate(-45deg) translate(-9px, 5px);
+        }
+        .line2{
+          opacity: 0;
+        }
+        .line3{
+          transform: rotate(45deg) translate(-8px, -5px);
+          
+        }
+      }
+
+      .nav-list{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(100%);
+        margin-top: 0;
+        transition: 0.5s ease-in;
+      }
+
+      .nav__active{
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .Home{
+    .HomeHeader{
+      .header-info{
+        h1{
+          font-weight: 500;
+          font-size: 49px;
+          line-height: 120%;
+
+          span{
+            font-weight: 700;
+            font-size: 49px;
+            line-height: 120%;
+          }
+        }
+
+        h2{
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 120%;
+        }
+      }
+    }
+    .OurServices{
+      h2{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+      }
+  
+      .service-info{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+
+      .card{
+        padding: 20px;
+
+        .card-icon{
+          margin-bottom: 15px;
+        }
+
+        .card-title{
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 120%;
+        }
+
+        p{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+        }
+      }
+    }
+
+    .Questions{
+
+      .section-tittle{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+      }
+
+      .section-info{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+
+      .accordion-tittle{
+        font-weight: 500;
+        font-size: 16.8746px;
+        line-height: 120%;
+  
+      }
+    }
+  }
+
+  .ServicesInfo{
+    padding: 100px 0;
+    h2{
+      text-align: center;
+      margin-bottom: 50px;
+
+    }
+
+    .service-card {
+      padding: 30px 10px;
+
+    
+
+      h4{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 15px;
+      }
+
+      h3{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 15px;
+
+      }
+
+      .service-card-info{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+
+        p{
+          font-weight: 600;
+          font-size: 16.8746px;
+          line-height: 120%;
+        }
+
+        a{
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 120%;
+          
+        }
+      }
+    }
+  }
+
+  .AboutCompany{
+    .company-blog{
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-radius: 0 20px 20px 0;
+
+      h2{
+        font-weight: 600;
+        font-size: 16.8746px !important;
+        line-height: 120%;
+      }
+    }
+
+    .info-blog{
+      padding: 50px 15px;
+      position: relative;
+
+      h2{
+        font-weight: 600;
+        font-size: 16.8746px !important;
+        line-height: 120%;
+      }
+
+      h3{
+        font-weight: 400;
+        font-size: 10px !important;
+        line-height: 120%;
+      }
+    }
+  }
+
+  // Services
+
+  .Services{
+    .HeaderWeb{
+      h1{
+        font-weight: 500;
+        font-size: 49px !important;
+        line-height: 120%;
+      }
+    }
+
+    .WebPrice{
+      .price-tittle{
+  
+        h3{
+          font-size: 36px;
+        }
+      }
+    }
+
+    .card{
+
+      .card-tittle{
+        font-weight: 600 !important;
+        font-size: 20.8746px !important;
+        line-height: 120% !important;
+      }
+      h4{
+        font-weight: 600 !important;
+        font-size: 20.8746px !important;
+        line-height: 120% !important;
+      }
+
+      .time{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 0 0 30px 30px;
+
+        h5{
+          font-size: 16px !important;
+          margin: 0;
+        }
+        
+        p{
+          font-size: 10px;
+          padding: 7px !important;
+          border-radius: 7px !important;
+          color: #fff;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+
+}
+
+

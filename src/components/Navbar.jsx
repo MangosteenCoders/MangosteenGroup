@@ -10,10 +10,7 @@ import uz from '../images/uz.svg'
 import ru from '../images/ru.svg'
 import en from '../images/en.svg'
 
-
-
 export default function Navbar() {
-
   const changeLanguage = (e) => {
     localStorage.setItem(MANGOSTEEN_LANGUAGE, e)
     document.location.reload(true)

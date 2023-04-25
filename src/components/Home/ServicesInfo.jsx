@@ -16,7 +16,6 @@ export default function ServicesInfo() {
           <div className="col-12 col-md-5">
             <div className='service-card-info'>
               <p>Veb-saytingizni biz bilan yarating. Biz turli xildagi saytlarni siz istaganingizdek qilib yaratib beramiz. </p>
-
               <Link to='/services'>Ba'tafsil ma'lumot</Link>
             </div>
           </div>
@@ -33,7 +32,6 @@ export default function ServicesInfo() {
           <div className="col-md-5">
             <div className='service-card-info'>
               <p>Telegram botingizni biz bilan yarating. Biz turli xildagi botlarni siz istaganingizdek qilib yaratib beramiz. </p>
-
               <Link to="/services">Ba'tafsil ma'lumot</Link>
             </div>
           </div>
@@ -50,7 +48,6 @@ export default function ServicesInfo() {
           <div className="col-md-5">
             <div className='service-card-info'>
               <p>Brandingizni dizaynini biz bilan yarating. Biz turli xildagi dizaynlarni siz istaganingizdek qilib yaratib beramiz. </p>
-
               <Link to="/services">Ba'tafsil ma'lumot</Link>
             </div>
           </div>

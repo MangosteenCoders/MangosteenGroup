@@ -12,7 +12,6 @@ export default function Questions() {
       <div className="container">
         <h2 className='section-tittle'>{getText('questionsTitle')}</h2>
         <p className='section-info'>{getText('questionsFrequentlyAsked')}</p>
-
         <div>
           <Accordion className='accordion'>
             <AccordionSummary
@@ -110,7 +109,6 @@ export default function Questions() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-
        </div>
       </div>
     </div>

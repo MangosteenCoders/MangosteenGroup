@@ -1,7 +1,6 @@
 // Mobile 
 
 @media (max-width : 576px) {
-  
   .Home{
     .HomeHeader{
       .header-info{
@@ -96,14 +95,10 @@
       h2{
         text-align: center;
         margin-bottom: 50px;
-  
       }
   
       .service-card {
         padding: 30px 10px;
-  
-      
-  
         h4{
           font-weight: 600;
           font-size: 25px;
@@ -116,7 +111,6 @@
           font-size: 25px;
           line-height: 120%;
           margin-bottom: 15px;
-  
         }
   
         .service-card-info{
@@ -134,7 +128,6 @@
             font-weight: 700;
             font-size: 12px;
             line-height: 120%;
-            
           }
         }
       }
@@ -186,7 +179,6 @@
 // Tablet
 
 @media (max-width : 768px) {
-
   .consultationBtn{
     font-weight: 700;
     font-size: 14.2657px;
@@ -196,7 +188,6 @@
   }
   .Navbar{
     .nav-body{
-
       .nav-logo{
         img{
           height: 50px;
@@ -216,7 +207,6 @@
         }
         .line3{
           transform: rotate(45deg) translate(-8px, -5px);
-          
         }
       }
 
@@ -298,7 +288,6 @@
     }
 
     .Questions{
-
       .section-tittle{
         font-weight: 700;
         font-size: 30px;
@@ -316,7 +305,6 @@
         font-weight: 500;
         font-size: 16.8746px;
         line-height: 120%;
-  
       }
     }
   }
@@ -326,13 +314,10 @@
     h2{
       text-align: center;
       margin-bottom: 50px;
-
     }
 
     .service-card {
       padding: 30px 10px;
-
-    
 
       h4{
         font-weight: 600;
@@ -364,7 +349,6 @@
           font-weight: 700;
           font-size: 12px;
           line-height: 120%;
-          
         }
       }
     }
@@ -415,7 +399,6 @@
 
     .WebPrice{
       .price-tittle{
-  
         h3{
           font-size: 36px;
         }
@@ -423,12 +406,12 @@
     }
 
     .card{
-
       .card-tittle{
         font-weight: 600 !important;
         font-size: 20.8746px !important;
         line-height: 120% !important;
       }
+
       h4{
         font-weight: 600 !important;
         font-size: 20.8746px !important;
@@ -457,8 +440,6 @@
       }
     }
   }
-
-
 }
 
 

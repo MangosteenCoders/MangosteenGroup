@@ -61,15 +61,12 @@ export default function OurServices() {
           <div data-aos="zoom-in" data-aos-duration="1000" className='mb-4 col-6 col-md-6 col-lg-4 '>
             <div className=" card">
               <h1 className='card-icon'>
-              <i className="fa-solid fa-lightbulb"></i>
+                <i className="fa-solid fa-lightbulb"></i>
               </h1>
               <h3 className="card-title">Creative g'oyalar</h3>
               <p>Bizning jamoa hamkorlik jarayonida yangi g'oyalar va takliflar bilan bo'lishadi </p>
             </div>
           </div>
-
-          
-          
         </div>
       </div>
     </div>

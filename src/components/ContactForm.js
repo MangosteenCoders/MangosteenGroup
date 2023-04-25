@@ -61,7 +61,6 @@ export default function ContactForm() {
       };
       setError('To’ldirish majburiy!')
     }
-
      else {
       style = {
         border: '2px solid green'

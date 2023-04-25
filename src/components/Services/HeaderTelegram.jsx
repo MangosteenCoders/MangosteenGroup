@@ -24,7 +24,6 @@ export default function HeaderTelegram() {
               </defs>
             </svg>
             </div>
-
           </div>
         </div>
       </div>

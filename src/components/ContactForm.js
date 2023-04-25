@@ -92,7 +92,7 @@ export default function ContactForm() {
               <textarea style={styled} onChange={changeNameHandler}  className='col-12' placeholder={getText('contactInputHolderText')}></textarea>
               <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <div className='contactSocialContent'>
-                <button className='consultationBtn contactConsultationBtn'>Submit</button>
+                <button onSubmit={changeNameHandler} className='consultationBtn contactConsultationBtn'>Submit</button>
                 <div className='contactSocialLink'>
                   <a href="https://t.me/Mangosteenuz" target='_blank'>
                     <i className='bx bxl-telegram'></i>

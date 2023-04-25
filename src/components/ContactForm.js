@@ -83,13 +83,13 @@ export default function ContactForm() {
           <div id='toDown' className='contactForm col-7'>
             <form onSubmit={sendForm} data-aos="zoom-out-up" data-aos-duration="2000" className='contactFormContent'>
               <label>Ваше Ф.И.О</label>
-              <input style={styled} onChange={changeNameHandler} className='col-12' type="text" placeholder={getText('contactInputHolder')} />
+              <input style={styled} onChange={changeNameHandler} className='col-12 form-control is-valid' required type="text" placeholder={getText('contactInputHolder')} />
               <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <label>Телефон</label>
-              <input style={styled} onChange={changeNameHandler} className='col-12' type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder={getText('contatInputHolderPhone')} />
+              <input style={styled} onChange={changeNameHandler} className='col-12 form-control is-valid' required type="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder={getText('contatInputHolderPhone')} />
               <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <label>Xabaringiz</label>
-              <textarea style={styled} onChange={changeNameHandler} className='col-12' placeholder={getText('contactInputHolderText')}></textarea>
+              <textarea style={styled} onChange={changeNameHandler} className='col-12 form-control is-valid' required placeholder={getText('contactInputHolderText')}></textarea>
               <p style={{color: 'red'}} className='mb-3'>{error}</p>
               <div className='contactSocialContent'>
                 <button onSubmit={changeNameHandler} className='consultationBtn contactConsultationBtn'>Submit</button>

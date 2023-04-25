@@ -76,6 +76,6 @@ export const en = {
     'contactQuestText': 'Submit your application',
     'contactQuestBtn': 'Submit your application',
     'contactInputHolder': 'Your name',
-    'contatInputHolderPhone': 'Your phone number',
+    'contatInputHolderPhone': '+998 97 777 07 77',
     'contactInputHolderText': 'Leave a message'
 }

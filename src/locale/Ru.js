@@ -78,6 +78,6 @@ export const ru = {
   'contactQuestText': 'Оставить заявку',
   'contactQuestBtn': 'Оставить заявку',
   'contactInputHolder': 'Ваше имя',
-  'contatInputHolderPhone': 'Ваш номер телефона',
+  'contatInputHolderPhone': '+998 97 777 07 77',
   'contactInputHolderText': 'Оставить сообщение'
 }

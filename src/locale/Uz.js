@@ -77,6 +77,6 @@ export const uz = {
     'contactQuestText': 'Arizangizni qoldiring',
     'contactQuestBtn': 'Arizangizni qoldiring',
     'contactInputHolder': 'Ismingiz',
-    'contatInputHolderPhone': 'Telefon Raqamingiz',
+    'contatInputHolderPhone': '+998 97 777 07 77',
     'contactInputHolderText': 'Xabar Qoldiring'
 }

@@ -1,7 +1,7 @@
 import axios from 'axios'
-
-// Local translates
+import { useState } from 'react'
 import { getLanguage, getText } from '../locale'
+
 
 export default function ContactForm() {
   const BOT_TOKEN = "6144923882:AAHwtPSAS0AAmfhkG56VObE9uwYKtazcglw";
@@ -32,6 +32,49 @@ export default function ContactForm() {
       })
   }
 
+  const [styled, setStyled] = useState({})
+  const [inputValue, setValue] = useState('')
+  const [err, setError] = useState('')
+
+  const formChangedHandler = (e) => {
+    e.preventDefault()
+    let style = {}
+    if(inputValue === '') {
+      style = {
+        border: '2px solid red'
+      }
+    }
+     else {
+      style = {
+        border: '2px solid green'
+      }
+    }
+    setStyled(style)
+  }
+
+  const changeNameHandler = (e) => {
+    let error = ''
+    let elInputName = e.target.name
+    let elInputValue = e.target.value
+    let a = { [elInputName]: elInputValue }
+
+    let style = {}
+    if(a[elInputName] === '') {
+      style = {
+        border: '2px solid red'
+      },
+      setError('To’ldirish majburiy!')
+    }
+     else {
+      style = {
+        border: '2px solid green'
+      }
+      setError('')
+    }
+    setStyled(style)
+    setValue(elInputValue)
+  }
+
   return (
     <section className='contactFormSection'>
       <div className="container">
@@ -39,15 +82,15 @@ export default function ContactForm() {
           <h2>{getText('contactQuestTitle')}</h2>
           <p>{getText('contactQuestText')}</p>
         </div>
-        <div className='contactContent'>
-          <div id='toDown' className='contactForm'>
-            <form onSubmit={sendForm} data-aos="zoom-out-up" data-aos-duration="2000" className='contactFormContent' target='_blank'>
+        <div className='contactContent row'>
+          <div id='toDown' className='contactForm col-7'>
+            <form onSubmit={sendForm} data-aos="zoom-out-up" data-aos-duration="2000" className='contactFormContent'>
               <label>Ваше Ф.И.О</label>
-              <input type="text" placeholder={getText('contactInputHolder')} />
+              <input style={styled} onChange={changeNameHandler}  className='col-12' type="text" placeholder={getText('contactInputHolder')} />
               <label>Телефон</label>
-              <input type="text" placeholder={getText('contatInputHolderPhone')} />
+              <input style={styled} onChange={changeNameHandler}  className='col-12' type="text" placeholder={getText('contatInputHolderPhone')} />
               <label>Xabaringiz</label>
-              <textarea placeholder={getText('contactInputHolderText')}></textarea>
+              <textarea style={styled} onChange={changeNameHandler}  className='col-12' placeholder={getText('contactInputHolderText')}></textarea>
               <div className='contactSocialContent'>
                 <button className='consultationBtn contactConsultationBtn'>Submit</button>
                 <div className='contactSocialLink'>
@@ -64,7 +107,7 @@ export default function ContactForm() {
               </div>
             </form>
           </div>
-          <div data-aos="fade-left" data-aos-duration="2000" className='contactInfoContent'>
+          <div data-aos="fade-left" data-aos-duration="2000" className='contactInfoContent col-3'>
             <div className='contactInfo'>
               <h2>Телефон</h2>
               <a href="tel:+998500105610">+998 50 010 56 10 </a>
